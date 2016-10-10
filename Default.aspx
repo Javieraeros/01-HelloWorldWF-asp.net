@@ -10,8 +10,18 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <label>Nombre: </label>
-        <asp:TextBox Id="Texto" Text="" runat="server"/>
+        <p>
+            <asp:Label ID="label1" runat="server" Text="Nombre"></asp:Label>
+            <asp:TextBox Id="Nombre" Text="" runat="server"/>
+            <asp:Label ID="label1error" runat="server" Text=""
+                style="color:red;"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="label2" runat="server" Text="Apellidos"></asp:Label>
+            <asp:TextBox Id="Apellidos"  Text="" runat="server"/>
+            <asp:Label ID="label2error" runat="server" Text=""
+                style="color:red;"></asp:Label>
+        </p>
         <asp:Button ID="Enviar" runat="server" OnClick="Enviar_Click" Text="Enviar"/>
         </div>
         <p>
